@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama2 Prompt</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f7f7f7; }
+        .container { max-width: 500px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h2 { text-align: center; }
+        textarea { width: 100%; height: 80px; margin-bottom: 15px; }
+        button { width: 100%; padding: 10px; background: #007bff; color: #fff; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; padding: 15px; background: #e9ecef; border-radius: 4px; min-height: 40px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Llama2 Prompt Generator</h2>
+        <form id="promptForm">
+            <textarea id="prompt" placeholder="Enter your prompt..."></textarea>
+            <button type="submit">Generate</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+        document.getElementById('promptForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const prompt = document.getElementById('prompt').value;
+            const resultDiv = document.getElementById('result');
+            resultDiv.textContent = 'Loading...';
+            try {
+                const response = await fetch('/api/llama2/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: prompt
+                });
+                const text = await response.text();
+                resultDiv.textContent = text;
+            } catch (err) {
+                resultDiv.textContent = 'Error: ' + err;
+            }
+        });
+    </script>
+</body>
+</html>

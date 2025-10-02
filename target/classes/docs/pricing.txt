@@ -1,0 +1,42 @@
+Car Rental Pricing and Fees
+
+Base Daily Rates:
+- Economy: $40 per day
+- Compact: $45 per day
+- Mid-Size: $55 per day
+- Full-Size: $65 per day
+- SUV: $80 per day
+- Luxury: $120 per day
+- Van/Minivan: $95 per day
+
+Weekly Discount:
+- Rentals of 7 days or more receive a 10% discount on base rates.
+- Long-term rentals (30+ days) may qualify for special monthly rates.
+
+Mileage Policy:
+- Economy, Compact, and Mid-Size: Unlimited mileage included.
+- Full-Size, SUV, and Van: Unlimited mileage included within the same country.
+- Luxury: 200 miles per day included; $0.50 per additional mile.
+
+Fuel Policy:
+- Full-to-Full: Included in base rate. Vehicle must be returned with a full tank.
+- Prepaid Fuel Option: Charged at local market rates, non-refundable.
+- Refueling Service Fee: $10 + cost of fuel if vehicle returned without a full tank.
+
+Extra Driver Fee:
+- $10 per day per additional driver.
+- Spouse or domestic partner can be added at no additional cost.
+
+Young Driver Surcharge:
+- Renters aged 21–24: $25 per day surcharge applies.
+- Renters under 21 are not permitted to rent.
+
+One-Way Rentals:
+- Domestic one-way rentals: $50 flat fee.
+- Cross-country one-way rentals: $200+ depending on distance.
+
+Additional Equipment Fees:
+- GPS Navigation: $7 per day.
+- Child Safety Seat: $10 per day.
+- Ski Rack: $12 per day.
+- Wi-Fi Hotspot: $8 per day.
