@@ -1,4 +1,4 @@
-package com.carrental.ollama_agent.service;
+package com.carrental.autoagent.service;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import java.util.Map;
 @Service
 public class RetrievalService {
     private final RestTemplate rest = new RestTemplate();
-    private static final String BASE = "http://localhost:8001";
+    private static final String BASE = "http://localhost:8000";
 
     @SuppressWarnings("unchecked")
     public List<String> query(String query, int k) {

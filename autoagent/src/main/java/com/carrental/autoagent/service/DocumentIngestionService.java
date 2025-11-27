@@ -1,4 +1,4 @@
-package com.carrental.ollama_agent.service;
+package com.carrental.autoagent.service;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.core.io.ClassPathResource;

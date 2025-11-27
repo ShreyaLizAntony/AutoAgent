@@ -1,4 +1,4 @@
-package com.carrental.ollama_agent;
+package com.carrental.autoagent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
