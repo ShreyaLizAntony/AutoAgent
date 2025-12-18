@@ -10,11 +10,11 @@ import com.carrental.autoagent.service.LlmService;
 @RequestMapping("/api/llama2")
 public class AgentController {
     @Autowired
-    private LlmService ollamaService;
+    private LlmService llmService;
 
     @PostMapping("/generate")
     public ResponseEntity<String> generate(@RequestBody String prompt) {
-        String result = ollamaService.generateText(prompt);
+        String result = llmService.generateText(prompt);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 }

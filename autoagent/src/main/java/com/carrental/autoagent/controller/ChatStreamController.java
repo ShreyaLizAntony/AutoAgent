@@ -12,11 +12,11 @@ import com.carrental.autoagent.service.LlmService;
 @RestController
 @RequestMapping("/api")
 public class ChatStreamController {
-  private final LlmService ollama;
-  public ChatStreamController(LlmService ollama){ this.ollama = ollama; }
+  private final LlmService llm;
+  public ChatStreamController(LlmService llm){ this.llm = llm; }
 
   @GetMapping(path="/stream", produces=MediaType.TEXT_EVENT_STREAM_VALUE)
   public SseEmitter stream(@RequestParam String prompt) {
-    return ollama.stream(prompt);
+    return llm.stream(prompt);
   }
 }

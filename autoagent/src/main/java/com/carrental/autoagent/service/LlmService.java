@@ -32,7 +32,9 @@ public class LlmService {
 
     // Model to use
     private static final String OPENROUTER_MODEL =
-            System.getenv().getOrDefault("OPENROUTER_MODEL", "meta-llama/llama-3.2-3b-instruct");
+            // System.getenv().getOrDefault("OPENROUTER_MODEL", "meta-llama/llama-3.2-3b-instruct");
+            System.getenv().getOrDefault("OPENROUTER_MODEL", "tngtech/deepseek-r1t2-chimera:free");
+
 
     // API key (must be set in environment)
     private static final String OPENROUTER_API_KEY =
